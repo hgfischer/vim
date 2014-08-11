@@ -22,6 +22,7 @@ NeoBundle 'Shougo/vimproc.vim', {
 NeoBundle 'airblade/vim-gitgutter'
 NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'bling/vim-airline'
+NeoBundle 'burnettk/vim-angular'
 NeoBundle 'derekwyatt/vim-scala'
 NeoBundle 'elzr/vim-json'
 NeoBundle 'fatih/vim-go'
