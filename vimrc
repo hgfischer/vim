@@ -104,7 +104,7 @@ au FileType go nmap gd <Plug>(go-def-tab)
 
 " Change default colorscheme
 set background=dark
-colorscheme solarized
+colorscheme Monokai
 
 " Tagbar
 nmap <F4> :TagbarToggle<CR>
