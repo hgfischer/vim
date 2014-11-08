@@ -259,7 +259,7 @@ let g:netrw_liststyle = 3
 nnoremap <Leader><Leader> :TagbarOpen<CR><C-W>l<C-W>s:e .<CR><C-W>h:let g:netrw_chgwin=winnr()<CR><C-W>l
 
 " Tab/Spaces
-au FileType python setl sw=2 sts=2 et
+au FileType python setl sw=4 sts=4 et
 au FileType ruby setl sw=2 sts=2 et
 
 let g:go_auto_type_info = 0
