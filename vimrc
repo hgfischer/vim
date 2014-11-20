@@ -268,3 +268,16 @@ let g:go_auto_type_info = 0
 
 " Disable scratch preview area
 set completeopt-=preview
+
+" JavaScript
+let javascript_enable_domhtmlcss = 1
+let b:javascript_fold = 1
+let g:javascript_conceal = 1
+
+map <c-f> :call JsBeautify()<cr>
+autocmd FileType javascript noremap <buffer>  <c-f> :call JsBeautify()<cr>
+autocmd FileType html noremap <buffer> <c-f> :call HtmlBeautify()<cr>
+autocmd FileType css noremap <buffer> <c-f> :call CSSBeautify()<cr>
+autocmd FileType javascript vnoremap <buffer>  <c-f> :call RangeJsBeautify()<cr>
+autocmd FileType html vnoremap <buffer> <c-f> :call RangeHtmlBeautify()<cr>
+autocmd FileType css vnoremap <buffer> <c-f> :call RangeCSSBeautify()<cr>
