@@ -264,7 +264,12 @@ nnoremap <Leader><Leader> :TagbarOpen<CR><C-W>l<C-W>s:e .<CR><C-W>h:let g:netrw_
 
 " Tab/Spaces
 au FileType python setl sw=4 sts=4 et
+au FileType php setl sw=4 sts=4 et
+au FileType javascript setl sw=4 sts=4 et
 au FileType ruby setl sw=2 sts=2 et
+au FileType css setl sw=2 sts=2 et
+au FileType xml setl sw=2 sts=2 et
+au FileType html setl sw=2 sts=2 et
 
 let g:go_auto_type_info = 0
 
