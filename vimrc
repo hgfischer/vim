@@ -300,3 +300,6 @@ let g:go_highlight_structs = 1
 
 " vim-json
 let g:vim_json_syntax_conceal = 0
+
+" vim-gitgutter
+let g:gitgutter_max_signs = 5000
