@@ -271,8 +271,6 @@ au FileType css setl sw=2 sts=2 et
 au FileType xml setl sw=2 sts=2 et
 au FileType html setl sw=2 sts=2 et
 
-let g:go_auto_type_info = 0
-
 " Disable scratch preview area
 set completeopt-=preview
 
@@ -290,6 +288,7 @@ autocmd FileType html vnoremap <buffer> <c-f> :call RangeHtmlBeautify()<cr>
 autocmd FileType css vnoremap <buffer> <c-f> :call RangeCSSBeautify()<cr>
 
 " vim-go
+let g:go_auto_type_info = 0
 let g:go_play_open_browser = 1
 let g:go_fmt_fail_silently = 0
 let g:go_fmt_command = "goimports"
