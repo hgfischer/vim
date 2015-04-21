@@ -152,88 +152,66 @@ let g:indent_guides_start_level=2
 
 " Enable ruler
 set ruler
-
 " Set history size
 set history=100
-
 " Enable search highlighting
 set hlsearch
 " Add global search/replace as default
 set gdefault
 " Highlight dynamically as pattern is typed
 set incsearch
-
 " Expand tabs to spaces
 set expandtab
 " Set tab size
 set tabstop=4
 " Set expanded tab size
 set shiftwidth=4
-
 " Display right column/gutter
 set colorcolumn=120
-
 " Automatically show matching brackets
 set showmatch
-
 " Backspace setup
 set backspace=indent,eol,start
-
 " Disable old vi compatibility
 set nocompatible
-
 " Enhance command-line completion
 set wildmenu
-
 " Allow cursor keys in insert mode
 set esckeys
-
 " Optimize for fast terminal connections
 set ttyfast
-
 " Use UTF-8 without BOM
 set encoding=utf-8 nobomb
-
 " Don't add empty newline at EOL
 set binary
 set noeol
-
 " Use F2 to toggle pastemode and avoid breaking pasted content
 set pastetoggle=<F2>
-
 " Respect modeline in files
 set modeline
 set modelines=4
-
 " Enable line numbers
 set number
-
 " Highlight current line
 set cursorline
-
 " Always show status line
 set laststatus=2
-
 " Disable error bells
 set noerrorbells
-
 " Don’t reset cursor to start of line when moving around.
 set nostartofline
-
 " Don’t show the intro message when starting Vim
 set shortmess=atI
-
 " Show the current mode
 set showmode
-
 " Show the filename in the window titlebar
 set title
-
 " Show the (partial) command as it’s being typed
 set showcmd
-
 " Start scrolling three lines before the horizontal window border
 set scrolloff=3
+" Disable scratch preview area
+set completeopt-=preview
 
 " Strip trailing whitespace (,ss)
 function! StripWhitespace()
@@ -289,9 +267,6 @@ au FileType ruby setl sw=2 sts=2 et
 au FileType css setl sw=2 sts=2 et
 au FileType xml setl sw=2 sts=2 et
 au FileType html setl sw=2 sts=2 et
-
-" Disable scratch preview area
-set completeopt-=preview
 
 " JavaScript
 let javascript_enable_domhtmlcss = 1
