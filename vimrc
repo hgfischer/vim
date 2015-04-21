@@ -19,6 +19,7 @@ NeoBundle 'Shougo/vimproc.vim', {
       \     'unix' : 'make -f make_unix.mak',
       \    },
       \ }
+NeoBundle 'StanAngeloff/php.vim'
 NeoBundle 'airblade/vim-gitgutter'
 NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'bling/vim-airline'
@@ -33,8 +34,8 @@ NeoBundle 'groenewege/vim-less'
 NeoBundle 'jstemmer/gotags.git'
 NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'klen/python-mode'
-NeoBundle 'maksimr/vim-jsbeautify'
 NeoBundle 'majutsushi/tagbar'
+NeoBundle 'maksimr/vim-jsbeautify'
 NeoBundle 'mustache/vim-mustache-handlebars'
 NeoBundle 'nanotech/jellybeans.vim'
 NeoBundle 'oblitum/rainbow'
@@ -44,13 +45,12 @@ NeoBundle 'rodjek/vim-puppet'
 NeoBundle 'scrooloose/nerdcommenter'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'shawncplus/phpcomplete.vim'
-NeoBundle 'StanAngeloff/php.vim'
 NeoBundle 'tfnico/vim-gradle'
 NeoBundle 'tomasr/molokai'
 NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'tpope/vim-ragtag'
 NeoBundle 'tpope/vim-rails'
 NeoBundle 'tpope/vim-surround'
-NeoBundle 'tpope/vim-ragtag'
 NeoBundle 'vim-ruby/vim-ruby'
 NeoBundle 'vim-scripts/netrw.vim'
 
@@ -81,7 +81,21 @@ let g:neocomplete#enable_at_startup = 1
 " Use smartcase.
 let g:neocomplete#enable_smart_case = 1
 " Set minimum syntax keyword length.
-let g:neocomplete#sources#syntax#min_keyword_length = 1
+let g:neocomplete#sources#syntax#min_keyword_length = 0
+let g:neocomplete#lock_buffer_name_pattern = '\*ku\*'
+
+" Define dictionary.
+let g:neocomplete#sources#dictionary#dictionaries = {
+    \ 'default' : '',
+    \ 'vimshell' : $HOME.'/.vimshell_hist',
+    \ 'scheme' : $HOME.'/.gosh_completions'
+    \ }
+
+" Define keyword.
+if !exists('g:neocomplete#keyword_patterns')
+    let g:neocomplete#keyword_patterns = {}
+endif
+let g:neocomplete#keyword_patterns['default'] = '\h\w*'
 
 " Plugin key-mappings.
 inoremap <expr><C-g>     neocomplete#undo_completion()
@@ -91,7 +105,7 @@ inoremap <expr><C-l>     neocomplete#complete_common_string()
 " <CR>: close popup and save indent.
 inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
 function! s:my_cr_function()
-    return neocomplete#close_popup() . "\<CR>"
+	return pumvisible() ? neocomplete#close_popup() : "\<CR>"
 endfunction
 " <TAB>: completion.
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
@@ -100,6 +114,9 @@ inoremap <expr><C-h> neocomplete#smart_close_popup()."\<C-h>"
 inoremap <expr><BS> neocomplete#smart_close_popup()."\<C-h>"
 inoremap <expr><C-y>  neocomplete#close_popup()
 inoremap <expr><C-e>  neocomplete#cancel_popup()
+inoremap <expr><Space> pumvisible() ? neocomplete#close_popup() : "\<Space>"
+
+let g:neocomplete#enable_auto_select = 1
 
 " Go related mappings
 au FileType go nmap <Leader>i <Plug>(go-info)
@@ -111,7 +128,7 @@ au FileType go nmap gd <Plug>(go-def-tab)
 
 " Change default colorscheme
 set background=dark
-colorscheme Monokai
+colorscheme jellybeans
 
 " Tagbar
 nmap <F4> :TagbarToggle<CR>
@@ -298,6 +315,8 @@ let g:go_fmt_autosave = 1
 let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
 let g:go_highlight_structs = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_build_constraints = 1
 
 " vim-json
 let g:vim_json_syntax_conceal = 0
