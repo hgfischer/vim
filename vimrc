@@ -127,7 +127,10 @@ au FileType go nmap gd <Plug>(go-def-tab)
 
 " Change default colorscheme
 set background=dark
-colorscheme jellybeans
+colorscheme jellybeans 
+
+" Disable code folding
+set nofoldenable
 
 " Tagbar
 nmap <F4> :TagbarToggle<CR>
