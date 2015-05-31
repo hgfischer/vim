@@ -10,7 +10,7 @@ call neobundle#begin(expand('$HOME/.vim/bundle'))
 NeoBundleFetch 'Shougo/neobundle.vim'
 
 " My Bundles here:
-NeoBundle 'Shougo/neocomplete.vim'
+NeoBundle 'Shougo/neocomplete.vim', { 'rev' : 'ver.2.0' }
 NeoBundle 'Shougo/vimproc.vim', {
       \ 'build' : {
       \     'windows' : 'tools\\update-dll-mingw',
@@ -19,40 +19,40 @@ NeoBundle 'Shougo/vimproc.vim', {
       \     'unix' : 'make -f make_unix.mak',
       \    },
       \ }
-NeoBundle 'StanAngeloff/php.vim'
-NeoBundle 'airblade/vim-gitgutter'
-NeoBundle 'altercation/vim-colors-solarized'
-NeoBundle 'bling/vim-airline'
-NeoBundle 'burnettk/vim-angular'
-NeoBundle 'cespare/vim-toml'
-NeoBundle 'derekwyatt/vim-scala'
-NeoBundle 'elzr/vim-json'
-NeoBundle 'fatih/vim-go'
+" NeoBundle 'StanAngeloff/php.vim', { 'rev': '1.1' }
+NeoBundle 'airblade/vim-gitgutter', { 'rev': '339f8ba079' }
+" NeoBundle 'altercation/vim-colors-solarized'
+NeoBundle 'bling/vim-airline', { 'rev': 'v0.7' }
+" NeoBundle 'burnettk/vim-angular', { 'rev': 'v2.0.0' }
+NeoBundle 'cespare/vim-toml', { 'rev': '190a55c2dd' }
+" NeoBundle 'derekwyatt/vim-scala', { 'rev': '71ada50fc5e' }
+NeoBundle 'elzr/vim-json', { 'rev': 'f5e3181d0b33' }
+NeoBundle 'fatih/vim-go', { 'rev': 'v1.0.5' }
 NeoBundle 'flazz/vim-colorschemes'
-NeoBundle 'godlygeek/tabular'
-NeoBundle 'groenewege/vim-less'
-NeoBundle 'jstemmer/gotags.git'
-NeoBundle 'kien/ctrlp.vim'
-NeoBundle 'klen/python-mode'
-NeoBundle 'majutsushi/tagbar'
-NeoBundle 'maksimr/vim-jsbeautify'
-NeoBundle 'mustache/vim-mustache-handlebars'
-NeoBundle 'nanotech/jellybeans.vim'
-NeoBundle 'oblitum/rainbow'
-NeoBundle 'othree/html5.vim'
-NeoBundle 'pangloss/vim-javascript'
-NeoBundle 'rodjek/vim-puppet'
-NeoBundle 'scrooloose/nerdcommenter'
-NeoBundle 'scrooloose/syntastic'
-NeoBundle 'shawncplus/phpcomplete.vim'
-NeoBundle 'tfnico/vim-gradle'
-NeoBundle 'tomasr/molokai'
-NeoBundle 'tpope/vim-fugitive'
-NeoBundle 'tpope/vim-ragtag'
-NeoBundle 'tpope/vim-rails'
-NeoBundle 'tpope/vim-surround'
-NeoBundle 'vim-ruby/vim-ruby'
-NeoBundle 'vim-scripts/netrw.vim'
+NeoBundle 'godlygeek/tabular', { 'rev': '60f25648814f' }
+NeoBundle 'groenewege/vim-less', { 'rev': '902870b38df' } 
+NeoBundle 'jstemmer/gotags', { 'rev': 'v1.3.0' }
+NeoBundle 'kien/ctrlp.vim', { 'rev': '1.79' }
+NeoBundle 'klen/python-mode', { 'rev': '0.8.1' }
+NeoBundle 'majutsushi/tagbar', { 'rev': 'v2.6.1' }
+NeoBundle 'maksimr/vim-jsbeautify', { 'rev': '1.0.1' }
+NeoBundle 'mustache/vim-mustache-handlebars', { 'rev': '291e49908a' }
+NeoBundle 'nanotech/jellybeans.vim', { 'rev': 'v1.5' }
+NeoBundle 'oblitum/rainbow', { 'rev': '7871d3e2350c' }
+NeoBundle 'othree/html5.vim', { 'rev': '0.27' }
+NeoBundle 'pangloss/vim-javascript', { 'rev': 'v0.9.0' }
+NeoBundle 'rodjek/vim-puppet', { 'rev': 'd881b93dc4a8' }
+NeoBundle 'scrooloose/nerdcommenter', { 'rev': '2.3.0' }
+NeoBundle 'scrooloose/syntastic', { 'rev': 'v0.5.7' }
+" NeoBundle 'shawncplus/phpcomplete.vim'
+NeoBundle 'tfnico/vim-gradle', { 'rev': '8736039c977' }
+" NeoBundle 'tomasr/molokai', { 'rev': 'db8ce13b373' }
+NeoBundle 'tpope/vim-fugitive', { 'rev': 'v2.2' }
+NeoBundle 'tpope/vim-ragtag', { 'rev': 'v2.0' }
+" NeoBundle 'tpope/vim-rails', { 'rev': 'v5.2' }
+NeoBundle 'tpope/vim-surround', { 'rev': 'v2.1' }
+NeoBundle 'vim-ruby/vim-ruby', { 'rev': 'vim7.4' }
+NeoBundle 'vim-scripts/netrw.vim', { 'rev': '142' }
 
 " Required:
 call neobundle#end()
