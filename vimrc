@@ -170,6 +170,8 @@ set tabstop=4
 set shiftwidth=4
 " Display right column/gutter
 set colorcolumn=120
+" Max syntax column 
+set synmaxcol=120
 " Automatically show matching brackets
 set showmatch
 " Backspace setup
