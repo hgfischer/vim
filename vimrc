@@ -72,7 +72,10 @@ NeoBundleCheck
 " noautocmd qall!
 
 " Disabling vim's startup message
-set shortmess=at
+set shortmess=at 
+
+" Enable relative line numbers
+set relativenumber
 
 " Disable AutoComplPop.
 let g:acp_enableAtStartup = 0
