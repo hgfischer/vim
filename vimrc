@@ -25,7 +25,8 @@ NeoBundle 'airblade/vim-gitgutter', { 'rev': '339f8ba079' }
 NeoBundle 'bling/vim-airline', { 'rev': 'v0.7' }
 " NeoBundle 'burnettk/vim-angular', { 'rev': 'v2.0.0' }
 NeoBundle 'cespare/vim-toml', { 'rev': '190a55c2dd' }
-" NeoBundle 'derekwyatt/vim-scala', { 'rev': '71ada50fc5e' }
+" NeoBundle 'derekwyatt/vim-scala', { 'rev': '71ada50fc5e' } 
+NeoBundle 'dgryski/vim-godef', { 'rev': '48952546203' }
 NeoBundle 'elzr/vim-json', { 'rev': 'f5e3181d0b33' }
 NeoBundle 'fatih/vim-go', { 'rev': 'v1.0.5' }
 NeoBundle 'flazz/vim-colorschemes'
@@ -45,6 +46,7 @@ NeoBundle 'rodjek/vim-puppet', { 'rev': 'd881b93dc4a8' }
 NeoBundle 'scrooloose/nerdcommenter', { 'rev': '2.3.0' }
 NeoBundle 'scrooloose/syntastic', { 'rev': 'v0.5.7' }
 " NeoBundle 'shawncplus/phpcomplete.vim'
+NeoBundle 'terryma/vim-multiple-cursors', { 'rev': 'v2.2' }
 NeoBundle 'tfnico/vim-gradle', { 'rev': '8736039c977' }
 " NeoBundle 'tomasr/molokai', { 'rev': 'db8ce13b373' }
 NeoBundle 'tpope/vim-fugitive', { 'rev': 'v2.2' }
