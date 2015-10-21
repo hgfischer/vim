@@ -40,6 +40,7 @@ NeoBundle 'maksimr/vim-jsbeautify', { 'rev': '1.0.1' }
 NeoBundle 'mustache/vim-mustache-handlebars', { 'rev': '291e49908a' }
 NeoBundle 'nanotech/jellybeans.vim', { 'rev': 'v1.5' }
 NeoBundle 'oblitum/rainbow', { 'rev': '7871d3e2350c' }
+NeoBundle 'saltstack/salt-vim'
 NeoBundle 'othree/html5.vim', { 'rev': '0.27' }
 NeoBundle 'pangloss/vim-javascript', { 'rev': 'v0.9.0' }
 NeoBundle 'rodjek/vim-puppet', { 'rev': 'd881b93dc4a8' }
@@ -276,6 +277,10 @@ au FileType ruby setl sw=2 sts=2 et
 au FileType css setl sw=2 sts=2 et
 au FileType xml setl sw=2 sts=2 et
 au FileType html setl sw=2 sts=2 et
+au FileType sls setl sw=2 sts=2 et
+
+" Map extensions
+au BufRead,BufNewFile *.jinja set filetype=sls
 
 " JavaScript
 let javascript_enable_domhtmlcss = 1
