@@ -281,6 +281,7 @@ au FileType sls setl sw=2 sts=2 et
 
 " Map extensions
 au BufRead,BufNewFile *.jinja set filetype=sls
+au BufRead,BufNewFile Fabfile set filetype=python
 
 " JavaScript
 let javascript_enable_domhtmlcss = 1
