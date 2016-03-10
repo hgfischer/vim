@@ -56,7 +56,7 @@ NeoBundleCheck
 set shortmess=at 
 
 " Enable relative line numbers
-set relativenumber
+" set relativenumber
 
 " Disable AutoComplPop.
 let g:acp_enableAtStartup = 0
