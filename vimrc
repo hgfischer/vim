@@ -180,8 +180,6 @@ set modeline
 set modelines=4
 " Enable line numbers
 set number
-" Highlight current line
-set cursorline
 " Always show status line
 set laststatus=2
 " Disable error bells
