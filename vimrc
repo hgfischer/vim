@@ -15,7 +15,7 @@ NeoBundle 'airblade/vim-gitgutter'
 NeoBundle 'bling/vim-airline', { 'rev': 'v0.7' }
 NeoBundle 'dgryski/vim-godef'
 NeoBundle 'elzr/vim-json'
-NeoBundle 'fatih/vim-go', { 'rev': 'v1.4' }
+NeoBundle 'fatih/vim-go', { 'rev': 'v1.6' }
 NeoBundle 'flazz/vim-colorschemes'
 NeoBundle 'godlygeek/tabular'
 NeoBundle 'jstemmer/gotags', { 'rev': 'v1.3.0' }
@@ -65,7 +65,7 @@ let g:neocomplete#enable_at_startup = 1
 " Use smartcase.
 let g:neocomplete#enable_smart_case = 1
 " Set minimum syntax keyword length.
-let g:neocomplete#sources#syntax#min_keyword_length = 2
+let g:neocomplete#sources#syntax#min_keyword_length = 3
 let g:neocomplete#lock_buffer_name_pattern = '\*ku\*'
 
 " Define dictionary.
@@ -101,14 +101,6 @@ inoremap <expr><C-e>  neocomplete#cancel_popup()
 
 let g:neocomplete#enable_auto_select = 1
 
-" Go related mappings
-au FileType go nmap <Leader>i <Plug>(go-info)
-au FileType go nmap <Leader>gd <Plug>(go-doc)
-au FileType go nmap <Leader>r <Plug>(go-run)
-au FileType go nmap <Leader>b <Plug>(go-build)
-au FileType go nmap <Leader>t <Plug>(go-test)
-au FileType go nmap gd <Plug>(go-def-tab)
-
 " Change default colorscheme
 set background=dark
 colorscheme jellybeans 
@@ -123,6 +115,11 @@ nmap <F4> :TagbarToggle<CR>
 let g:syntastic_enable_signs = 1
 let g:syntastic_echo_current_error = 1
 let g:syntastic_enable_highlighting = 1
+" Syntastic fixes for vim-go
+let g:syntastic_go_checkers = ['golint', 'govet', 'errcheck']
+let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['go'] }
+" Fix for GoBuild or GoTest output window
+" let g:go_list_type = "quickfix"
 
 " Ident shortcuts
 vmap <D-]> >gv
@@ -281,6 +278,7 @@ let g:go_fmt_autosave = 1
 let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
 let g:go_highlight_structs = 1
+let g:go_highlight_interfaces = 1
 let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
 
