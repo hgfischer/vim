@@ -12,10 +12,10 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 " My Bundles here:
 NeoBundle 'Shougo/neocomplete.vim', { 'rev' : 'ver.2.1' }
 NeoBundle 'airblade/vim-gitgutter'
-NeoBundle 'bling/vim-airline', { 'rev': 'v0.7' }
+NeoBundle 'bling/vim-airline', { 'rev': 'v0.8' }
 NeoBundle 'dgryski/vim-godef'
 NeoBundle 'elzr/vim-json'
-NeoBundle 'fatih/vim-go', { 'rev': 'v1.6' }
+NeoBundle 'fatih/vim-go', { 'rev': 'v1.8' }
 NeoBundle 'flazz/vim-colorschemes'
 NeoBundle 'godlygeek/tabular'
 NeoBundle 'jstemmer/gotags', { 'rev': 'v1.3.0' }
@@ -27,7 +27,6 @@ NeoBundle 'oblitum/rainbow'
 NeoBundle 'saltstack/salt-vim'
 NeoBundle 'othree/html5.vim', { 'rev': '0.27' }
 NeoBundle 'pangloss/vim-javascript', { 'rev': 'v0.9.0' }
-NeoBundle 'rodjek/vim-puppet'
 NeoBundle 'scrooloose/nerdcommenter', { 'rev': '2.3.0' }
 NeoBundle 'scrooloose/syntastic', { 'rev': 'v0.5.7' }
 NeoBundle 'tomasr/molokai'
