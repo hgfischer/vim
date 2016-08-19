@@ -10,30 +10,54 @@ call neobundle#begin(expand('$HOME/.vim/bundle'))
 NeoBundleFetch 'Shougo/neobundle.vim'
 
 " My Bundles here:
-NeoBundle 'Shougo/neocomplete.vim', { 'rev' : 'ver.2.1' }
+"NeoBundle 'Shougo/neocomplete.vim', { 'rev' : 'ver.2.1' }
+"NeoBundle 'airblade/vim-gitgutter'
+"NeoBundle 'bling/vim-airline', { 'rev': 'v0.8' }
+"NeoBundle 'dgryski/vim-godef'
+"NeoBundle 'elzr/vim-json'
+"NeoBundle 'fatih/vim-go', { 'rev': 'v1.8' }
+"NeoBundle 'flazz/vim-colorschemes'
+"NeoBundle 'godlygeek/tabular'
+"NeoBundle 'jstemmer/gotags', { 'rev': 'v1.3.0' }
+"NeoBundle 'kien/ctrlp.vim', { 'rev': '1.79' }
+"NeoBundle 'klen/python-mode', { 'rev': '0.8.1' }
+"NeoBundle 'majutsushi/tagbar', { 'rev': 'v2.6.1' }
+"NeoBundle 'nanotech/jellybeans.vim', { 'rev': 'v1.5' }
+"NeoBundle 'oblitum/rainbow'
+"NeoBundle 'saltstack/salt-vim'
+"NeoBundle 'pangloss/vim-javascript', { 'rev': 'v0.9.0' }
+"NeoBundle 'scrooloose/nerdcommenter', { 'rev': '2.3.0' }
+"NeoBundle 'scrooloose/syntastic', { 'rev': 'v0.5.7' }
+"NeoBundle 'tomasr/molokai'
+"NeoBundle 'tpope/vim-fugitive', { 'rev': 'v2.2' }
+"NeoBundle 'tpope/vim-ragtag', { 'rev': 'v2.0' }
+"NeoBundle 'tpope/vim-surround', { 'rev': 'v2.1' }
+
+NeoBundle 'Shougo/neocomplete.vim'
 NeoBundle 'airblade/vim-gitgutter'
-NeoBundle 'bling/vim-airline', { 'rev': 'v0.8' }
+NeoBundle 'bling/vim-airline'
 NeoBundle 'dgryski/vim-godef'
 NeoBundle 'elzr/vim-json'
-NeoBundle 'fatih/vim-go', { 'rev': 'v1.8' }
+NeoBundle 'fatih/vim-go'
 NeoBundle 'flazz/vim-colorschemes'
 NeoBundle 'godlygeek/tabular'
-NeoBundle 'jstemmer/gotags', { 'rev': 'v1.3.0' }
-NeoBundle 'kien/ctrlp.vim', { 'rev': '1.79' }
-NeoBundle 'klen/python-mode', { 'rev': '0.8.1' }
-NeoBundle 'majutsushi/tagbar', { 'rev': 'v2.6.1' }
-NeoBundle 'nanotech/jellybeans.vim', { 'rev': 'v1.5' }
+NeoBundle 'jstemmer/gotags'
+NeoBundle 'kien/ctrlp.vim'
+NeoBundle 'klen/python-mode'
+NeoBundle 'majutsushi/tagbar'
+NeoBundle 'nanotech/jellybeans.vim'
 NeoBundle 'oblitum/rainbow'
 NeoBundle 'saltstack/salt-vim'
+NeoBundle 'pangloss/vim-javascript'
+NeoBundle 'scrooloose/nerdcommenter'
+NeoBundle 'scrooloose/syntastic'
+NeoBundle 'tomasr/molokai'
+NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'tpope/vim-ragtag'
+NeoBundle 'tpope/vim-surround'
+
 " Disabled because it was causing problems with included HTML plugin
 " NeoBundle 'othree/html5.vim', { 'rev': '0.27' }
-NeoBundle 'pangloss/vim-javascript', { 'rev': 'v0.9.0' }
-NeoBundle 'scrooloose/nerdcommenter', { 'rev': '2.3.0' }
-NeoBundle 'scrooloose/syntastic', { 'rev': 'v0.5.7' }
-NeoBundle 'tomasr/molokai'
-NeoBundle 'tpope/vim-fugitive', { 'rev': 'v2.2' }
-NeoBundle 'tpope/vim-ragtag', { 'rev': 'v2.0' }
-NeoBundle 'tpope/vim-surround', { 'rev': 'v2.1' }
 
 " Required:
 call neobundle#end()
