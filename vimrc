@@ -25,7 +25,8 @@ NeoBundle 'majutsushi/tagbar', { 'rev': 'v2.6.1' }
 NeoBundle 'nanotech/jellybeans.vim', { 'rev': 'v1.5' }
 NeoBundle 'oblitum/rainbow'
 NeoBundle 'saltstack/salt-vim'
-NeoBundle 'othree/html5.vim', { 'rev': '0.27' }
+" Disabled because it was causing problems with included HTML plugin
+" NeoBundle 'othree/html5.vim', { 'rev': '0.27' }
 NeoBundle 'pangloss/vim-javascript', { 'rev': 'v0.9.0' }
 NeoBundle 'scrooloose/nerdcommenter', { 'rev': '2.3.0' }
 NeoBundle 'scrooloose/syntastic', { 'rev': 'v0.5.7' }
