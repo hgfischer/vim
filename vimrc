@@ -128,6 +128,8 @@ let g:neocomplete#enable_auto_select = 1
 " Change default colorscheme
 set background=dark
 colorscheme jellybeans 
+" Ignore background settings from colorscheme
+hi Normal ctermbg=none
 
 " Disable code folding
 set nofoldenable
